@@ -1,0 +1,74 @@
+@2021
+Necula Eduard-Ionut 332CA
+Politehnica, Automatica si Calculatoare, CTI
+Email: ne_eduard_ionut@yahoo.com
+
+Tema: Range Minimum Query
+
+Fisierele de test (din fisierul in) au urmatoarea structura:
+
+N - nr de elemente
+M - nr de perechi
+N numere
+M perechi de numere (x, y)
+(X, Y) reprezinta perechea pentru punctul de start si de finish unde
+cautam elementul
+
+Dupa rulare testele se afiseaza in fisierul .out
+
+Testele:
+1 - 10
+31 - 40
+Am generat teste cu structura de mai sus pentru cazul
+cand N >> M
+
+Testele:
+11-20
+41 - 50
+Sunt pentru cazul cand N = M
+
+Testele:
+21 - 30
+51 - 60
+Sunt pentru cazul cand N <= M
+
+    Numerele random pentru N le-am generat cu link-ul de mai jos,
+iar perechile (x, y) au fost generate cu un site, link mai jos.
+
+    Codul a fost luat de pe geeksforgeeks, mai putin citirea din testele .in si scrierea
+in fisierele .out specifice pentru fiecare algoritm.
+
+    Codul scris in var1.cpp reprezinta implementarea codului range minimum query,
+folosind segment tree.
+    Codul scris in var2.cpp reprezinta implementarea codului range minimum query,
+folosind square root decomposition
+    Codul scris in var3.cpp reprezinta implementarea codului range minimum query,
+folosind sparse table.
+
+    Comanda "make run-best" este pentru codul ce foloseste segment tree (var1.cpp), fiind cel mai eficient cod.
+L-am testat cu "time make run-best", pe masina mea ruleaza totul intr-o secunda.
+
+    Comanda "make run-p1" este pentru codul ce foloseste square root decomposition (var2.cpp), fiind cel mai putin
+eficient cod, ruland pe masina personala in 7 secunde.
+
+    Comanda "make run-p2" este pentru codul ce foloseste sparse table (var3.cpp), este foarte apropiat la executie
+cu var1.cpp, ruland codul in 1.5 secunde.
+
+Masina folosita are 4 nuclee cu 8 thread-uri, un i7 din generatia a 7-a, cu 4 gb de ram.
+
+! Codul genereaza un fisier de test0.out, a se ignora.
+
+Codul folosit la segment tree:
+https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/
+
+Codul folosit la square root decomposition:
+https://www.geeksforgeeks.org/range-minimum-query-for-static-array/
+
+Codul folosit la sparse table:
+https://www.geeksforgeeks.org/sparse-table/
+
+Pt generare perechi de numere:
+https://onlineintegertools.com/generate-integer-pairs
+
+Pt numere random:
+https://numbergenerator.org/randomnumbergenerator#!numbers=30&low=1&high=1000000&unique=true&csv=nl&oddeven=&oddqty=0&sorted=false&addfilters=
